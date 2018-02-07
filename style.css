@@ -111,7 +111,7 @@ a {
   display:grid;
   grid-template-columns: 1fr;
   grid-gap: 5px;
-  height: 1000px;
+  height: auto;
   /* overflow: hidden; */
   
    
