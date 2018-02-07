@@ -89,6 +89,10 @@ a {
   padding-top: 1em;
 }
 
+.linkIcons{
+  height:2em;
+}
+
 .project {
     background: grey;
     color: whitesmoke;
