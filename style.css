@@ -36,7 +36,7 @@ body{
   /* border: 1px solid var(--yellow); */
   max-width: 600px;
   margin:auto;
-  min-height:100vh;
+  height: auto;
   
 
 }
