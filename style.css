@@ -91,6 +91,11 @@ a {
 
 .linkIcons{
   height:2em;
+ 
+}
+
+.linkIcons:hover{
+  opacity: 50%;
 }
 
 .project {
