@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Monstserrat:bold,regular,thin);
+
 :root {
     --yellow: #ffc600;
     --black: #272727;
@@ -8,12 +10,11 @@ html {
     /* border-box box model allows us to add padding and border to our elements without increasing their size */
     box-sizing: border-box;
     /* A system font stack so things load nice and quick! */
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-      Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-weight: 900;
+    font-family: Montserrat;
+    font-weight: normal;
     font-size: 1em;
     color: var(--black);
-    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+    /* text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07); */
   }
   /*
   Inherit box-sizing: border-box; from our <html> selector
@@ -25,21 +26,10 @@ html {
   box-sizing: inherit;
 }
 
+
+
 body{
   background: linear-gradient(90deg, #ffffff 0%, #f0f0f0 51%, #e7e7e7 75%);
-}
-
-.section {
-    border: 1px solid var(--black);
-    display:grid;
-    grid-gap: 0.5em;
-    justify-content: center;
-    
-}
-
-.project {
-    border: 1px solid red;
-    
 }
 
 .container {
@@ -50,3 +40,57 @@ body{
   margin:auto;
 
 }
+
+.section {
+    border: 1px solid var(--black);
+    display:grid;
+    grid-gap: 0.5em;
+    justify-content: center;
+    min-height: 100px;
+    align-content: center;
+    
+}
+
+.header {
+  background: white url(images/desktop_01.jpg);
+  background-size: 1100px;
+  /* background-size: cover; */
+  background-position: 42% 0px;
+  height: 23em;
+  display:grid;
+  grid-auto-columns: 1fr;
+  padding:4em;
+  
+}
+
+.intro {
+  margin: 0;
+}
+
+.tagline {
+  font-weight: normal;
+  color: #0022ff;
+  font-size: 1em;
+  margin: 0;
+  
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 150;
+  
+}
+
+.links{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(8, 1fr);
+  padding-top: 1em;
+}
+
+.project {
+    background: grey;
+    color: whitesmoke;
+}
+
