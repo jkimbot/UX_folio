@@ -11,6 +11,7 @@ html {
     font-weight: normal;
     font-size: 1em;
     color: var(--black);
+    
     /* text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07); */
   }
   /*
@@ -30,43 +31,65 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-body{
-  background: linear-gradient(90deg, #ffffff 0%, #f0f0f0 51%, #e7e7e7 75%);
-  height = 100%;
-  margin: 0;
+body {
+  background-image: url("images/desktop_06.png");   
+  background-size:  1300px;
+  background-repeat: no-repeat;
+  background-position-x: calc((1vw * 48) - 560px);
+  background-attachment:fixed; 
 }
+
+
+
+@media (max-width: 600px){
+  body {
+    background-size: 800px;
+    background-position-x: calc((1vw * 48) - 350px);
+  }
+} 
 
 .container {
   display: grid;
-  /* grid-gap: 1em; */
-  /* border: 1px solid var(--yellow); */
   max-width: 600px;
   margin: auto;
   height: auto;
+  grid-template-columns: 1fr;
   
 
 }
 
 .section {
-    /* border: 1px solid var(--black); */
     display:grid;
     grid-gap: 0.5em;
     justify-content: center;
     min-height: 100px;
     align-content: center;
-    
+}
+
+.fixedHeader{
+  background:white;
+  text-align: center;
+  width: 100%;
+  top:0;
+  opacity: 0;
+  transition:all 0.1s;
+  position: fixed;
+  z-index: 1;
+  letter-spacing: 0.5em;
+  padding: 10px;
+  font-weight: 100;
+}
+
+.fixed .fixedHeader{
+  opacity:0.85;
+  /* box-shadow: 0 1px 5px rgba(0,0,0,.6); */
 }
 
 .header {
-  background: white url(images/desktop_02.jpg);
-  background-size: 1100px;
-  /* background-size: cover; */
-  background-position: 42% 0px;
+  padding:4em;
   height: 23em;
   display:grid;
-  grid-auto-columns: 1fr;
-  padding:4em;
-  
+  grid-auto-columns: 1fr;  
 }
 
 .intro {
@@ -82,11 +105,13 @@ body{
 }
 
 a {
-  text-decoration: none;
+  
   color: var(--black);
-  font-weight: 150;
+  font-weight: 100;
   
 }
+
+
 
 .links {
   display: grid;
@@ -97,12 +122,15 @@ a {
 
 .linkIcons {
   height:2em;
+  transition: 0.1s;
+  border: 0px solid white;
+  border-radius: 50%;
  
 }
 
 .linkIcons:hover {
-  opacity: 50%;
-}
+  border: 4px solid var(--yellow);
+  }
 
 
 /* Work Project Section */
@@ -133,6 +161,8 @@ a {
     min-height: 200px;
   }
   
+
+
   /* .project > * {
     margin:0;
     width: 100%;
