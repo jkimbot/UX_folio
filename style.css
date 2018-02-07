@@ -22,6 +22,12 @@ html {
   box-sizing: inherit;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: href='https://fonts.googleapis.com/css?family=Monstserrat:bold,regular,thin', "HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}
+
+
+
 
 
 body{
@@ -35,7 +41,7 @@ body{
   /* grid-gap: 1em; */
   /* border: 1px solid var(--yellow); */
   max-width: 600px;
-  margin:auto;
+  margin: auto;
   height: auto;
   
 
@@ -102,19 +108,20 @@ a {
 /* Work Project Section */
 
 .projects {
-  display:flex;
-  flex-direction: column;
-  flex:1;
-  justify-content: space-between;
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
   height: 1000px;
-  overflow: hidden;
+  /* overflow: hidden; */
   
    
 
 }
 
   /* Each Project*/
-  .project > * {
+
+
+    .project > * {
     margin:0;
     width: 100%;
     background: rgb(213, 213, 213);
@@ -123,5 +130,17 @@ a {
     display:flex;
     justify-content: center;
     align-items: center;
-    min-height: 18vh;
+    min-height: 200px;
   }
+  
+  /* .project > * {
+    margin:0;
+    width: 100%;
+    background: rgb(213, 213, 213);
+    flex: 1 0 auto;
+    color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+  } */
