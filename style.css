@@ -5,9 +5,8 @@
   
 
 html {
-    /* border-box box model allows us to add padding and border to our elements without increasing their size */
+    /* border-box box model */
     box-sizing: border-box;
-    /* A system font stack so things load nice and quick! */
     font-family: Montserrat;
     font-weight: normal;
     font-size: 1em;
@@ -16,7 +15,6 @@ html {
   }
   /*
   Inherit box-sizing: border-box; from our <html> selector
-  Apparently this is a bit better than applying box-sizing: border-box; directly to the * selector
 */
 *,
 *:before,
@@ -28,19 +26,23 @@ html {
 
 body{
   background: linear-gradient(90deg, #ffffff 0%, #f0f0f0 51%, #e7e7e7 75%);
+  height = 100%;
+  margin: 0;
 }
 
 .container {
   display: grid;
   /* grid-gap: 1em; */
-  border: 5px solid var(--yellow);
+  /* border: 1px solid var(--yellow); */
   max-width: 600px;
   margin:auto;
+  min-height:100vh;
+  
 
 }
 
 .section {
-    border: 1px solid var(--black);
+    /* border: 1px solid var(--black); */
     display:grid;
     grid-gap: 0.5em;
     justify-content: center;
@@ -115,11 +117,11 @@ a {
   .project > * {
     margin:0;
     width: 100%;
-    background: rgb(240, 96, 0);
+    background: rgb(213, 213, 213);
     flex: 1 0 auto;
     color: white;
     display:flex;
     justify-content: center;
     align-items: center;
-    min-height:18vh;
+    min-height:29vh;
   }
