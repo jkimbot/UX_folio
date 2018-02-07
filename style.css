@@ -1,5 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Monstserrat:bold,regular,thin);
-
 :root {
     --yellow: #ffc600;
     --black: #272727;
@@ -34,7 +32,7 @@ body{
 
 .container {
   display: grid;
-  grid-gap: 1em;
+  /* grid-gap: 1em; */
   border: 5px solid var(--yellow);
   max-width: 600px;
   margin:auto;
@@ -52,7 +50,7 @@ body{
 }
 
 .header {
-  background: white url(images/desktop_01.jpg);
+  background: white url(images/desktop_02.jpg);
   background-size: 1100px;
   /* background-size: cover; */
   background-position: 42% 0px;
@@ -82,24 +80,46 @@ a {
   
 }
 
-.links{
+.links {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(8, 1fr);
   padding-top: 1em;
 }
 
-.linkIcons{
+.linkIcons {
   height:2em;
  
 }
 
-.linkIcons:hover{
+.linkIcons:hover {
   opacity: 50%;
 }
 
-.project {
-    background: grey;
-    color: whitesmoke;
+
+/* Work Project Section */
+
+.projects {
+  display:flex;
+  flex-direction: column;
+  flex:1;
+  justify-content: space-between;
+  height: 1000px;
+  overflow: hidden;
+  
+   
+
 }
 
+  /* Each Project*/
+  .project > * {
+    margin:0;
+    width: 100%;
+    background: rgb(240, 96, 0);
+    flex: 1 0 auto;
+    color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height:28vh;
+  }
