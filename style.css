@@ -1,4 +1,4 @@
-@import url('https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat')
+@import url('//fonts.google.com/specimen/Montserrat?selection.family=Montserrat')
 
 :root {
     --yellow: #ffc600;
@@ -49,6 +49,7 @@ body {
     background-position-x: calc((1vw * 48) - 350px);
     
   }
+  
   .tagline {
     font-weight: normal;
     color: #0022ff;
