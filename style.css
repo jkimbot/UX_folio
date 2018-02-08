@@ -139,17 +139,15 @@ a {
   display:grid;
   grid-template-columns: 1fr;
   grid-gap: 5px;
-  height: auto;
-  /* overflow: hidden; */
-  
-   
-
+  height: auto;  
 }
+
+
 
   /* Each Project*/
 
 
-    .project > * {
+    .project {
     margin:0;
     width: 100%;
     background: rgb(213, 213, 213);
@@ -159,10 +157,59 @@ a {
     justify-content: center;
     align-items: center;
     min-height: 200px;
+    transition: 0.2s;
   }
   
+  .project:hover{
+    background: rgb(189, 189, 189);
+    min-height: 202px;
+  
+  }
+
+  .modal {
+    display: none;
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+
+  }
+
+  .modal-content {
+    background-color: whitesmoke;
+    margin: 10% auto;
+    padding: 20px;
+    width: 90%;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.17);
+    animation-name: modalOpen;
+    animation-duration: 0.5s;
+    min-height: 200vh;
+
+  }
+
+  .closeBtn {
+    color: #ccc;
+    float: right;
+    font-size: 60px;
+    padding: 10px 30px;
+  }
+
+  .closeBtn:hover,.closeBtn:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
 
+
+  @keyframes modalOpen{
+    from { opacity : 0}
+    to { opacity: 1}
+  }
   /* .project > * {
     margin:0;
     width: 100%;
