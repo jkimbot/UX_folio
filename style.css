@@ -47,7 +47,20 @@ body {
   body {
     background-size: 800px;
     background-position-x: calc((1vw * 48) - 350px);
+    
   }
+  .tagline {
+    font-weight: normal;
+    color: #0022ff;
+    font-size: 0.8em;
+    margin: 0;
+    
+  }
+  
+  .header {
+    padding: 2em;
+  }
+
 } 
 
 .container {
