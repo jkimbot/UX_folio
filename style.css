@@ -178,6 +178,9 @@ a {
     width: 100%;
     overflow: auto;
     background-color: rgba(0,0,0,0.5);
+    animation-name: modalOpen;
+    animation-duration: 0.4s;
+
 
   }
 
@@ -187,8 +190,8 @@ a {
     padding: 20px;
     width: 90%;
     box-shadow: 0 5px 8px 0 rgba(0,0,0,0.17);
-    animation-name: modalOpen;
-    animation-duration: 0.5s;
+    animation-name: modalContentOpen;
+    animation-duration: 0.6s;
     min-height: 200vh;
 
   }
@@ -206,9 +209,12 @@ a {
     cursor: pointer;
   }
 
-
-
   @keyframes modalOpen{
+    from { opacity : 0}
+    to { opacity: 1}
+  }
+
+  @keyframes modalContentOpen{
     from { opacity : 0}
     to { opacity: 1}
   }
