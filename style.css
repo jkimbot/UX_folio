@@ -1,7 +1,16 @@
 /* @import url(//fonts.google.com/specimen/Montserrat?selection.family=Montserrat); */
 @font-face{
-  font-family: Montserrat; src: url('../fonts/Monsterrat-Regular.woff');
+  font-family: Montserrat; src: url('../fonts/Montserrat-Regular.woff');
 }
+
+@font-face{
+  font-family: Montserrat-Bold; src: url('../fonts/Montserrat-Bold.woff');
+}
+
+@font-face{
+  font-family: Montserrat-SemiBold; src: url('../fonts/Montserrat-SemiBold.woff');
+}
+
 
 :root {
     --yellow: #ffc600;
@@ -12,7 +21,7 @@
 html {
     /* border-box box model */
     box-sizing: border-box;
-    font-family: "Monstserrat", sans-serif;
+    font-family: Montserrat, sans-serif;
     font-weight: normal;
     font-size: 1em;
     color: var(--black);
@@ -32,7 +41,9 @@ html {
   font-family:Montserrat, "HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif !important;
 } */
 
-
+h1 {
+  font-family: Montserrat-SemiBold;
+}
 
 
 
