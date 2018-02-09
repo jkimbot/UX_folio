@@ -9,7 +9,7 @@
 html {
     /* border-box box model */
     box-sizing: border-box;
-    font-family: 'Montserrat','HelveticaNeue','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-family: "Monstserrat", sans-serif;
     font-weight: normal;
     font-size: 1em;
     color: var(--black);
@@ -59,7 +59,7 @@ body {
     font-size: 0.8em;
     margin: 0;
     width: 68%;
-    min-width: 300px;;
+    min-width: 235px;
     border: 1px solid red; 
     
 }
