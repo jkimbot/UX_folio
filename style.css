@@ -1,4 +1,7 @@
-@import url(//fonts.google.com/specimen/Montserrat?selection.family=Montserrat);
+/* @import url(//fonts.google.com/specimen/Montserrat?selection.family=Montserrat); */
+@font-face{
+  font-family: Montserrat; src: url('../fonts/Monsterrat-Regular.woff');
+}
 
 :root {
     --yellow: #ffc600;
@@ -60,7 +63,6 @@ body {
     margin: 0;
     width: 68%;
     min-width: 235px;
-    border: 1px solid red; 
     
 }
   
@@ -102,7 +104,6 @@ body {
 .fixed .fixedHeader{
   opacity:0.85;
   display:block;
-  z-index: 5;
   /* box-shadow: 0 1px 5px rgba(0,0,0,.6); */
 }
 
