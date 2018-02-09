@@ -1,4 +1,4 @@
-@import url('//fonts.google.com/specimen/Montserrat?selection.family=Montserrat')
+@import url(//fonts.google.com/specimen/Montserrat?selection.family=Montserrat);
 
 :root {
     --yellow: #ffc600;
@@ -9,7 +9,7 @@
 html {
     /* border-box box model */
     box-sizing: border-box;
-    font-family: "Montserrat", "HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Montserrat','HelveticaNeue','Helvetica Neue',Helvetica,Arial,sans-serif;
     font-weight: normal;
     font-size: 1em;
     color: var(--black);
@@ -46,23 +46,26 @@ body {
 @media (max-width: 600px){
   body {
     background-size: 800px;
-    background-position-x: calc((1vw * 48) - 350px);
-    
+    background-position-x: calc((1vw * 48) - 350px);  
   }
+  .header {
+    padding: 0;
+    }
+}
   
-  .tagline {
+.tagline {
     font-weight: normal;
     color: #0022ff;
     font-size: 0.8em;
     margin: 0;
+    width: 68%;
+    min-width: 300px;;
+    border: 1px solid red; 
     
-  }
+}
   
-  .header {
-    padding: 2em;
-  }
 
-} 
+
 
 .container {
   display: grid;
